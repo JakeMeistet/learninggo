@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	plain := []int{1, 0, 1, 1, 0, 1, 0, 0}
@@ -8,7 +10,7 @@ func main() {
 	key := []int{0, 1, 1, 1, 0, 1, 1, 0}
 	fmt.Println("Key:\t\t", key)
 	encrypted := []int{0, 0, 0, 0, 0, 0, 0, 0}
-	for i := 0; i < 8; i++ {
+	for i := 0; i < len(plain); i++ {
 		if plain[i] == key[i] {
 			encrypted[i] = 0
 		} else {
