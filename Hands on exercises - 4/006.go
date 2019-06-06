@@ -12,6 +12,6 @@ func main() {
 	fmt.Println(cap(states))
 
 	for i := 0; i <= len(states); i++ {
-		 fmt.Println(i, states[i])
+		fmt.Println(i, states[i])
 	}
 }
